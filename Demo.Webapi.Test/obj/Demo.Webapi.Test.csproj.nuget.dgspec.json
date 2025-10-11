@@ -1,0 +1,398 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Test\\Demo.Webapi.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj",
+        "projectName": "Demo.Webapi.BLayer",
+        "projectPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj",
+        "packagesPath": "C:\\Users\\txdao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.BLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\txdao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj": {
+                "projectPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj"
+              },
+              "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.DL\\Demo.Webapi.DL.csproj": {
+                "projectPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.DL\\Demo.Webapi.DL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj",
+        "projectName": "Demo.Webapi.Common",
+        "projectPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj",
+        "packagesPath": "C:\\Users\\txdao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\txdao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.DL\\Demo.Webapi.DL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.DL\\Demo.Webapi.DL.csproj",
+        "projectName": "Demo.Webapi.DL",
+        "projectPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.DL\\Demo.Webapi.DL.csproj",
+        "packagesPath": "C:\\Users\\txdao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.DL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\txdao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj": {
+                "projectPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Test\\Demo.Webapi.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Test\\Demo.Webapi.Test.csproj",
+        "projectName": "Demo.Webapi.Test",
+        "projectPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Test\\Demo.Webapi.Test.csproj",
+        "packagesPath": "C:\\Users\\txdao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\txdao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi\\Demo.Webapi.csproj": {
+                "projectPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi\\Demo.Webapi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.2, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi\\Demo.Webapi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi\\Demo.Webapi.csproj",
+        "projectName": "Demo.Webapi",
+        "projectPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi\\Demo.Webapi.csproj",
+        "packagesPath": "C:\\Users\\txdao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\txdao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj": {
+                "projectPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj"
+              },
+              "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj": {
+                "projectPath": "C:\\Users\\txdao\\source\\repos\\Demo.Webapi\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
