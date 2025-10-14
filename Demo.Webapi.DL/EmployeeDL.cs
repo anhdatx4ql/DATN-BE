@@ -21,7 +21,7 @@ namespace Demo.Webapi.DL
         /// Hàm lấy mã nhân viên mới
         /// </summary>
         /// <returns>EmployeeCode</returns>
-        /// Xuân Đào (26/03/2023)
+        /// pvdat (26/03/2023)
         public string GetNewEmployeeCode()
         {
             var mysqlConnection = GetOpenConnection();

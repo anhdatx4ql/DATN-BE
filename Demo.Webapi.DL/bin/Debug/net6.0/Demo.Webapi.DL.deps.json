@@ -424,7 +424,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.3"
         },
         "runtime": {
-          "Demo.Webapi.Common.dll": {}
+          "Demo.Webapi.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

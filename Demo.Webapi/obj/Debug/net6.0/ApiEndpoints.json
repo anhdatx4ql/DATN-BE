@@ -1,0 +1,1441 @@
+[
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAllRecord",
+    "RelativePath": "api/Account",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "CreateRecord",
+    "RelativePath": "api/Account",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.Account",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateRecord",
+    "RelativePath": "api/Account",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.Account",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetRecordById",
+    "RelativePath": "api/Account/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteRecord",
+    "RelativePath": "api/Account/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "BulkCreate",
+    "RelativePath": "api/Account/BulkCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "records",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Demo.Webapi.Common.Entities.Account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.AccountController",
+    "Method": "ExcelExport",
+    "RelativePath": "api/Account/ExcelExport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "widthList",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "accounts",
+        "Type": "System.Collections.Generic.List\u00601[[Demo.Webapi.Common.Entities.Account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "FilterRecord",
+    "RelativePath": "api/Account/Filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyWord",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/Account/Login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "MultipleDelete",
+    "RelativePath": "api/Account/MultipleDelete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recordIds",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.AccountController",
+    "Method": "UpdateAccountLevel",
+    "RelativePath": "api/Account/UpdateAccountLevel",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accounts",
+        "Type": "System.Collections.Generic.List\u00601[[Demo.Webapi.Common.Entities.Account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.AccountController",
+    "Method": "UpdateMultipleStatus",
+    "RelativePath": "api/Account/UpdateMultiple",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ids",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "newStatus",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Asset, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAllRecord",
+    "RelativePath": "api/Asset",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Asset, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "CreateRecord",
+    "RelativePath": "api/Asset",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.Asset",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Asset, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateRecord",
+    "RelativePath": "api/Asset",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.Asset",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Asset, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetRecordById",
+    "RelativePath": "api/Asset/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Asset, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteRecord",
+    "RelativePath": "api/Asset/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Asset, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "BulkCreate",
+    "RelativePath": "api/Asset/BulkCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "records",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Demo.Webapi.Common.Entities.Asset, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.AssetController",
+    "Method": "Excel",
+    "RelativePath": "api/Asset/Excel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Asset, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "FilterRecord",
+    "RelativePath": "api/Asset/Filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyWord",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Asset, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "MultipleDelete",
+    "RelativePath": "api/Asset/MultipleDelete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recordIds",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Category, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAllRecord",
+    "RelativePath": "api/Category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Category, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "CreateRecord",
+    "RelativePath": "api/Category",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.Category",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Category, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateRecord",
+    "RelativePath": "api/Category",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.Category",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Category, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetRecordById",
+    "RelativePath": "api/Category/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Category, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteRecord",
+    "RelativePath": "api/Category/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Category, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "BulkCreate",
+    "RelativePath": "api/Category/BulkCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "records",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Demo.Webapi.Common.Entities.Category, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Category, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "FilterRecord",
+    "RelativePath": "api/Category/Filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyWord",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Category, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "MultipleDelete",
+    "RelativePath": "api/Category/MultipleDelete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recordIds",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Department, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAllRecord",
+    "RelativePath": "api/Department",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Department, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "CreateRecord",
+    "RelativePath": "api/Department",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.Department",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Department, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateRecord",
+    "RelativePath": "api/Department",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.Department",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Department, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetRecordById",
+    "RelativePath": "api/Department/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Department, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteRecord",
+    "RelativePath": "api/Department/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Department, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "BulkCreate",
+    "RelativePath": "api/Department/BulkCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "records",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Demo.Webapi.Common.Entities.Department, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Department, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "FilterRecord",
+    "RelativePath": "api/Department/Filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyWord",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Department, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "MultipleDelete",
+    "RelativePath": "api/Department/MultipleDelete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recordIds",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Employee, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAllRecord",
+    "RelativePath": "api/Employees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Employee, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "CreateRecord",
+    "RelativePath": "api/Employees",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.Employee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Employee, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateRecord",
+    "RelativePath": "api/Employees",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.Employee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Employee, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetRecordById",
+    "RelativePath": "api/Employees/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Employee, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteRecord",
+    "RelativePath": "api/Employees/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Employee, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "BulkCreate",
+    "RelativePath": "api/Employees/BulkCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "records",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Demo.Webapi.Common.Entities.Employee, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.EmployeesController",
+    "Method": "Excel",
+    "RelativePath": "api/Employees/Excel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Employee, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "FilterRecord",
+    "RelativePath": "api/Employees/Filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyWord",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Employee, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "MultipleDelete",
+    "RelativePath": "api/Employees/MultipleDelete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recordIds",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.login_account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAllRecord",
+    "RelativePath": "api/LoginAccount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.login_account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "CreateRecord",
+    "RelativePath": "api/LoginAccount",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.login_account",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.login_account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateRecord",
+    "RelativePath": "api/LoginAccount",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.login_account",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.login_account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetRecordById",
+    "RelativePath": "api/LoginAccount/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.login_account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteRecord",
+    "RelativePath": "api/LoginAccount/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.login_account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "BulkCreate",
+    "RelativePath": "api/LoginAccount/BulkCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "records",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Demo.Webapi.Common.Entities.login_account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.login_account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "FilterRecord",
+    "RelativePath": "api/LoginAccount/Filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyWord",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.login_account, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "MultipleDelete",
+    "RelativePath": "api/LoginAccount/MultipleDelete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recordIds",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAllRecord",
+    "RelativePath": "api/ReceiptPayment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "CreateRecord",
+    "RelativePath": "api/ReceiptPayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.receipt_payment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateRecord",
+    "RelativePath": "api/ReceiptPayment",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.receipt_payment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetRecordById",
+    "RelativePath": "api/ReceiptPayment/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteRecord",
+    "RelativePath": "api/ReceiptPayment/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "BulkCreate",
+    "RelativePath": "api/ReceiptPayment/BulkCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "records",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Demo.Webapi.Common.Entities.receipt_payment, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.ReceiptPaymentController",
+    "Method": "ExcelExport",
+    "RelativePath": "api/ReceiptPayment/ExcelExport",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "widthList",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "FilterRecord",
+    "RelativePath": "api/ReceiptPayment/Filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyWord",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.ReceiptPaymentController",
+    "Method": "FullDelete",
+    "RelativePath": "api/ReceiptPayment/FullDelete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.ReceiptPaymentController",
+    "Method": "GetAllWithKeyword",
+    "RelativePath": "api/ReceiptPayment/GetAllByKeyword",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.ReceiptPaymentController",
+    "Method": "GetNewCode",
+    "RelativePath": "api/ReceiptPayment/GetNewCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "MultipleDelete",
+    "RelativePath": "api/ReceiptPayment/MultipleDelete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recordIds",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment_detail, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAllRecord",
+    "RelativePath": "api/ReceiptPaymentDetail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment_detail, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "CreateRecord",
+    "RelativePath": "api/ReceiptPaymentDetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.receipt_payment_detail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment_detail, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateRecord",
+    "RelativePath": "api/ReceiptPaymentDetail",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.receipt_payment_detail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment_detail, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetRecordById",
+    "RelativePath": "api/ReceiptPaymentDetail/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment_detail, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteRecord",
+    "RelativePath": "api/ReceiptPaymentDetail/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment_detail, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "BulkCreate",
+    "RelativePath": "api/ReceiptPaymentDetail/BulkCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "records",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Demo.Webapi.Common.Entities.receipt_payment_detail, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment_detail, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "FilterRecord",
+    "RelativePath": "api/ReceiptPaymentDetail/Filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyWord",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.ReceiptPaymentDetailController",
+    "Method": "GetAllByReId",
+    "RelativePath": "api/ReceiptPaymentDetail/GetAllByReId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "re_id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.receipt_payment_detail, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "MultipleDelete",
+    "RelativePath": "api/ReceiptPaymentDetail/MultipleDelete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recordIds",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Supplier, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAllRecord",
+    "RelativePath": "api/Supplier",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Supplier, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "CreateRecord",
+    "RelativePath": "api/Supplier",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.Supplier",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Supplier, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateRecord",
+    "RelativePath": "api/Supplier",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "record",
+        "Type": "Demo.Webapi.Common.Entities.Supplier",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Supplier, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetRecordById",
+    "RelativePath": "api/Supplier/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Supplier, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteRecord",
+    "RelativePath": "api/Supplier/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Supplier, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "BulkCreate",
+    "RelativePath": "api/Supplier/BulkCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "records",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Demo.Webapi.Common.Entities.Supplier, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.SupplierController",
+    "Method": "Excel",
+    "RelativePath": "api/Supplier/Excel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Supplier, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "FilterRecord",
+    "RelativePath": "api/Supplier/Filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyWord",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Demo.Webapi.Controllers.BaseController\u00601[[Demo.Webapi.Common.Entities.Supplier, Demo.Webapi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "MultipleDelete",
+    "RelativePath": "api/Supplier/MultipleDelete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recordIds",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

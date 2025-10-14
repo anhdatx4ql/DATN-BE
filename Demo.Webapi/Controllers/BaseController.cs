@@ -223,7 +223,7 @@ namespace Demo.Webapi.Controllers
         /// Hàm xóa hàng loạt
         /// </summary>
         /// <param name="recordIds">Danh sách id</param>
-        /// <author>Xuân Đào - 02/05/2023</author>
+        /// <author>pvdat - 02/05/2023</author>
         /// <returns></returns>
         [HttpDelete]
         [Route("MultipleDelete")]

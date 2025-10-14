@@ -1690,19 +1690,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\txdao\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj",
+      "projectUniqueName": "D:\\DATN\\am_backend\\Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj",
       "projectName": "Demo.Webapi.BLayer",
-      "projectPath": "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj",
-      "packagesPath": "C:\\Users\\txdao\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi.BLayer\\obj\\",
+      "projectPath": "D:\\DATN\\am_backend\\Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "D:\\DATN\\am_backend\\Demo.Webapi.BLayer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\txdao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1716,11 +1721,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj": {
-              "projectPath": "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj"
+            "D:\\DATN\\am_backend\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj": {
+              "projectPath": "D:\\DATN\\am_backend\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj"
             },
-            "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi.DL\\Demo.Webapi.DL.csproj": {
-              "projectPath": "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi.DL\\Demo.Webapi.DL.csproj"
+            "D:\\DATN\\am_backend\\Demo.Webapi.DL\\Demo.Webapi.DL.csproj": {
+              "projectPath": "D:\\DATN\\am_backend\\Demo.Webapi.DL\\Demo.Webapi.DL.csproj"
             }
           }
         }
@@ -1729,7 +1734,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net6.0": {
@@ -1764,7 +1775,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }

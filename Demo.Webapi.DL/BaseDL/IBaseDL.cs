@@ -15,7 +15,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// Khởi tạo kết nối tới db
         /// </summary>
         /// <returns></returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public IDbConnection GetOpenConnection();
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// <param name="commandTimeout"></param>
         /// <param name="commandType"></param>
         /// <returns> IEnumerable </returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public IEnumerable<dynamic> Query(IDbConnection cnn, string sql, object param = null, IDbTransaction transaction = null, bool buffered = true, int? commandTimeout = null, CommandType? commandType = null);
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// <param name="commandTimeout"></param>
         /// <param name="commandType"></param>
         /// <returns>Generic</returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public T QueryFirstOrDefault(IDbConnection cnn, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null, CommandType? commandType = null);
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// <param name="commandTimeout"></param>
         /// <param name="commandType"></param>
         /// <returns> Số bản ghi bị ảnh hưởng </returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public int Execute(IDbConnection cnn, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null, CommandType? commandType = null);
 
         public GridReader QueryMultiple(IDbConnection cnn, string sql, object? param = null, IDbTransaction transaction = null, int? commandTimeout = null, CommandType? commandType = null);
@@ -66,7 +66,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// <param name="pageSize"></param>
         /// <param name="pageNumber"></param>
         /// <returns></returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public ServiceResult FilterRecord(string? keyWord, int? pageSize, int? pageNumber);
 
         /// <summary>
@@ -74,14 +74,14 @@ namespace Demo.Webapi.DL.BaseDL
         /// </summary>
         /// <param name="id">id bản ghi cần tìm</param>
         /// <returns>Generic</returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public ServiceResult GetRecordById(Guid id);
 
         /// <summary>
         /// Lấy toàn bộ record
         /// </summary>
         /// <returns>IEnumerable</returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public IEnumerable<dynamic> GetRecords();
 
         /// <summary>
@@ -89,7 +89,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// </summary>
         /// <param name="recordId"></param>
         /// <returns>Số bản ghi bị ảnh hưởng</returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public int DeleteRecord(Guid recordId);
 
         public int MultipleDeleteRecord(string recordIds);
@@ -99,7 +99,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// </summary>
         /// <param name="record">Thông tin bản ghi</param>
         /// <returns>Service result</returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public ServiceResult CreateRecord(T record);
 
         /// <summary>
@@ -107,7 +107,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// </summary>
         /// <param name="record">Thông tin bản ghi</param>
         /// <returns>Service result</returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public ServiceResult UpdateRecord(Guid id, T record);
 
         public ServiceResult BulkCreate(IEnumerable<T> RecordList);

@@ -30,7 +30,7 @@ namespace Demo.Webapi.BLayer
         /// </summary>
         /// <param name="ids">danh sách id</param>
         /// <param name="newStatus">trạng thái mới</param>
-        /// <author>Xuân Đào 27/04/2023</author>
+        /// <author>pvdat 27/04/2023</author>
         /// <returns></returns>
         public int UpdateMultipleStatus(string ids, int newStatus)
         {
@@ -41,7 +41,7 @@ namespace Demo.Webapi.BLayer
         /// Cập nhật level tài khoản
         /// </summary>
         /// <param name="accounts">danh sách tài khoản</param>
-        /// <author>Xuân Đào 27/04/2023</author>
+        /// <author>pvdat 27/04/2023</author>
         /// <returns></returns>
         public int UpdateAccountLevel(List<Account> accounts)
         {

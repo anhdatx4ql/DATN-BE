@@ -24,7 +24,7 @@ namespace Demo.Webapi.BLayer
         /// Hàm lấy danh sách chi tiết chứng từ theo id chứng từ
         /// </summary>
         /// <param name="re_id">id chứng từ</param>
-        /// <author>Xuân Đào 01/05/2023</author>
+        /// <author>pvdat 01/05/2023</author>
         /// <returns></returns>
         public ServiceResult GetAllRPDByReId(Guid re_id)
         {
@@ -35,7 +35,7 @@ namespace Demo.Webapi.BLayer
         /// Hàm thêm hàng loạt chi tiết chứng từ
         /// </summary>
         /// <param name="ReceiptPaymentDetails">Danh sách chi tiết chứng từ</param>
-        /// <author>Xuân Đào 01/05/2023</author>
+        /// <author>pvdat 01/05/2023</author>
         /// <returns></returns>
         public int BulkInsert(IEnumerable<receipt_payment_detail> ReceiptPaymentDetails)
         {
@@ -46,7 +46,7 @@ namespace Demo.Webapi.BLayer
         /// Hàm cập nhật hàng loạt chi tiết chứng từ
         /// </summary>
         /// <param name="records">Danh sách chi tiết chứng từ</param>
-        /// <author>Xuân Đào 01/05/2023</author>
+        /// <author>pvdat 01/05/2023</author>
         /// <returns></returns>
         public ServiceResult UpdateMultiple(Guid re_id, IEnumerable<receipt_payment_detail> records)
         {

@@ -36,7 +36,7 @@ namespace Demo.Webapi.BLayer.BaseBL
         /// Hàm tạo mới một bản ghi
         /// </summary>
         /// <param name="record">Thông tin bản ghi</param>
-        /// <author>Xuân Đào 28/03/2023 </author>
+        /// <author>pvdat 28/03/2023 </author>
         /// <returns> Service Result </returns>
         public ServiceResult CreateRecord(T record)
         {
@@ -71,7 +71,7 @@ namespace Demo.Webapi.BLayer.BaseBL
         /// Hàm xóa một bản ghi
         /// </summary>
         /// <param id="id">Thông tin id bản ghi</param>
-        /// <author>Xuân Đào 28/03/2023 </author>
+        /// <author>pvdat 28/03/2023 </author>
         /// <returns> Số bản ghi bị ảnh hưởng </returns>
         public int DeleteRecord(Guid id)
         {

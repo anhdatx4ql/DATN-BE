@@ -1927,19 +1927,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\txdao\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi\\Demo.Webapi.csproj",
+      "projectUniqueName": "D:\\DATN\\am_backend\\Demo.Webapi\\Demo.Webapi.csproj",
       "projectName": "Demo.Webapi",
-      "projectPath": "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi\\Demo.Webapi.csproj",
-      "packagesPath": "C:\\Users\\txdao\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi\\obj\\",
+      "projectPath": "D:\\DATN\\am_backend\\Demo.Webapi\\Demo.Webapi.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "D:\\DATN\\am_backend\\Demo.Webapi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\txdao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1953,11 +1958,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj": {
-              "projectPath": "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj"
+            "D:\\DATN\\am_backend\\Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj": {
+              "projectPath": "D:\\DATN\\am_backend\\Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj"
             },
-            "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj": {
-              "projectPath": "C:\\Users\\txdao\\source\\repos\\EMS\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj"
+            "D:\\DATN\\am_backend\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj": {
+              "projectPath": "D:\\DATN\\am_backend\\Demo.Webapi.Common\\Demo.Webapi.Common.csproj"
             }
           }
         }
@@ -1966,7 +1971,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net6.0": {
@@ -2016,8 +2027,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Swashbuckle.AspNetCore.SwaggerUI' 6.2.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-qrmm-w75w-3wpx",
+      "libraryId": "Swashbuckle.AspNetCore.SwaggerUI",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

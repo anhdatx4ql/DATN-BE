@@ -18,7 +18,7 @@ namespace Demo.Webapi.BLayer.BaseBL
         /// <param name="pageSize"></param>
         /// <param name="pageNumber"></param>
         /// <returns></returns>
-        /// Xuân Đào (25/03/2023)
+        /// pvdat (25/03/2023)
         public ServiceResult FilterRecord(string? keyWord, int? pageSize, int? pageNumber);
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Demo.Webapi.BLayer.BaseBL
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        /// Xuân Đào (25/03/2023)
+        /// pvdat (25/03/2023)
         public ServiceResult GetRecordById(Guid id);
 
         /// <summary>

@@ -26,7 +26,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// Hàm thêm mới bản ghi
         /// </summary>
         /// <param name="record">Bản ghi</param>
-        /// <author>Xuân Đào - 04/05/2023</author>
+        /// <author>pvdat - 04/05/2023</author>
         /// <returns></returns>
         public ServiceResult CreateRecord(T record)
         {
@@ -123,7 +123,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// Hàm thêm mới hàng loạt bản ghi
         /// </summary>
         /// <param name="RecordList">Danh sách bản ghi</param>
-        /// <author>Xuân Đào - 04/05/2023</author>
+        /// <author>pvdat - 04/05/2023</author>
         /// <returns></returns>
         public ServiceResult BulkCreate(IEnumerable<T> RecordList)
         {
@@ -216,7 +216,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// </summary>
         /// <param name="recordId"></param>
         /// <returns>Số bản ghi bị ảnh hưởng</returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public int DeleteRecord(Guid recordId)
         {
             try
@@ -242,7 +242,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// Hàm xóa hàng loạt bản ghi
         /// </summary>
         /// <param name="recordIds">Danh sách id bản ghi</param>
-        /// <author>Xuân Đào 11/05/2023</author>
+        /// <author>pvdat 11/05/2023</author>
         /// <returns></returns>
         public int MultipleDeleteRecord(string recordIds)
         {
@@ -285,7 +285,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// <param name="commandTimeout"></param>
         /// <param name="commandType"></param>
         /// <returns> Số bản ghi bị ảnh hưởng </returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public int Execute(IDbConnection cnn, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null, CommandType? commandType = null)
         {
             return cnn.Execute(sql, param, transaction, commandTimeout, commandType);
@@ -298,7 +298,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// <param name="pageSize"></param>
         /// <param name="pageNumber"></param>
         /// <returns></returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public ServiceResult FilterRecord(string? keyWord, int? pageSize, int? pageNumber)
         {
             try
@@ -386,7 +386,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// Khởi tạo kết nối tới db
         /// </summary>
         /// <returns></returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public IDbConnection GetOpenConnection()
         {
             var mySqlConnection = new NpgsqlConnection("Host=ep-jolly-unit-97576361.ap-southeast-1.aws.neon.tech;Username=xuandao9876;Password=Qq8pD0UdnfiS;Database=neondb;");
@@ -400,7 +400,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// </summary>
         /// <param name="id">id bản ghi cần tìm</param>
         /// <returns>Generic</returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public ServiceResult GetRecordById(Guid id)
         {
 
@@ -433,7 +433,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// Lấy toàn bộ record
         /// </summary>
         /// <returns>IEnumerable</returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public IEnumerable<dynamic> GetRecords()
         {
             try
@@ -480,7 +480,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// <param name="commandTimeout"></param>
         /// <param name="commandType"></param>
         /// <returns> IEnumerable </returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public IEnumerable<dynamic> Query(IDbConnection cnn, string sql, object param = null, IDbTransaction transaction = null, bool buffered = true, int? commandTimeout = null, CommandType? commandType = null)
         {
             return cnn.Query(sql, param, transaction, buffered, commandTimeout, commandType);
@@ -496,7 +496,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// <param name="commandTimeout"></param>
         /// <param name="commandType"></param>
         /// <returns>Generic</returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public T QueryFirstOrDefault(IDbConnection cnn, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null, CommandType? commandType = null)
         {
             return cnn.QueryFirstOrDefault<T>(sql, param, transaction, commandTimeout, commandType);
@@ -511,7 +511,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// </summary>
         /// <param name="record">Thông tin bản ghi</param>
         /// <returns>Service result</returns>
-        /// Xuân Đào (28/03/2023)
+        /// pvdat (28/03/2023)
         public ServiceResult UpdateRecord(Guid id, T record)
         {
             var properties = typeof(T).GetProperties();
@@ -583,7 +583,7 @@ namespace Demo.Webapi.DL.BaseDL
         /// Hàm lấy toàn bộ dữ liệu theo keyword phục vụ xuất excel
         /// </summary>
         /// <param name="keyword">Từ khóa</param>
-        /// <author>Xuân Đào 01/05/2023</author>
+        /// <author>pvdat 01/05/2023</author>
         /// <returns></returns>
         public IEnumerable<dynamic> getAllByKeyword(string keyword)
         {
