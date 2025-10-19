@@ -24,6 +24,29 @@ namespace Demo.Webapi.Controllers
             _employeeBL = employeeBL;
         }
 
+        [HttpGet("NewEmployeeCode")]
+        public IActionResult NewEmployeeCode()
+        {
+            try
+            {
+                var result = _employeeBL.GetNewEmployeeCode();
+                if (result == null)
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    return StatusCode(200, result);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                _exceptionResult.TraceId = HttpContext.TraceIdentifier;
+                return StatusCode(500, _exceptionResult);
+            }
+        }
+
         [HttpGet("Excel")]
         public IActionResult Excel([FromQuery] string title)
         {
