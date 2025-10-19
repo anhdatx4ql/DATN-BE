@@ -1,17 +1,18 @@
-﻿using Demo.Webapi.Common.Entites;
+﻿using Dapper;
+using Demo.Webapi.Common;
+using Demo.Webapi.Common.Entites;
+using Demo.Webapi.Common.Entites.DTO;
+using Demo.Webapi.Common.Entities;
+using Demo.Webapi.Common.Enums;
+using Demo.Webapi.DL.BaseDL;
+using Microsoft.AspNetCore.Http;
 using MySqlConnector;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.Text;
-using Dapper;
-using Demo.Webapi.Common;
-using Demo.Webapi.Common.Entites.DTO;
 using System.Net.Http;
-using Demo.Webapi.Common.Enums;
-using Microsoft.AspNetCore.Http;
-using Demo.Webapi.Common.Entities;
-using Demo.Webapi.DL.BaseDL;
+using System.Text;
 
 namespace Demo.Webapi.DL
 {
@@ -24,11 +25,50 @@ namespace Demo.Webapi.DL
         /// pvdat (26/03/2023)
         public string GetNewEmployeeCode()
         {
-            var mysqlConnection = GetOpenConnection();
-            string procName = "Proc_GetLastestEmployeeCode";
-            string result = QueryFirstOrDefault(mysqlConnection, procName, commandType: CommandType.StoredProcedure).EmployeeCode;
-            int code = Int32.Parse(result.Substring(3, result.Length - 3));
-            return $"{result.Substring(0,3)}{code+1}";
+            using (var mysqlConnection = GetOpenConnection())
+            {
+                string sql = "SELECT get_latest_employee_code();";
+
+                // Cast IDbConnection sang NpgsqlConnection
+                using var command = new Npgsql.NpgsqlCommand(sql, (Npgsql.NpgsqlConnection)mysqlConnection);
+
+                var result = command.ExecuteScalar();
+                var newEmployeeCode = GetNextCode(result?.ToString());
+                return newEmployeeCode;
+            }
+        }
+
+        /// <summary>
+        /// Tăng mã với định dạng linh hoạt, chỉ tăng phần số cuối cùng
+        /// Ví dụ: NV-1-123-4 -> NV-1-123-5, ABC-42 -> ABC-43
+        /// </summary>
+        private string GetNextCode(string currentCode)
+        {
+            if (string.IsNullOrWhiteSpace(currentCode))
+                throw new ArgumentException("currentCode is null or empty");
+
+            // Tìm cụm số cuối cùng trong mã
+            int endPos = currentCode.Length;
+            int startPos = endPos - 1;
+
+            // Tìm vị trí bắt đầu của cụm số cuối cùng
+            while (startPos >= 0 && char.IsDigit(currentCode[startPos]))
+                startPos--;
+
+            startPos++; // Điều chỉnh vị trí bắt đầu của cụm số
+
+            // Trích xuất phần prefix và phần số
+            string prefix = currentCode.Substring(0, startPos);
+            string numberPart = currentCode.Substring(startPos);
+
+            // Chuyển đổi và tăng giá trị số
+            if (!int.TryParse(numberPart, out int number))
+                throw new FormatException($"Không thể chuyển '{numberPart}' thành số"); number++; 
+            
+            // Giữ nguyên số chữ số ban đầu (padding)
+            string nextNumberPart = number.ToString().PadLeft(numberPart.Length, '0'); 
+            // Ghép lại
+            return$"{prefix}{nextNumberPart}";
         }
 
         /// <summary>
