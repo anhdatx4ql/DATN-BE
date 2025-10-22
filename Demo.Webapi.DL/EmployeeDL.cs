@@ -3,6 +3,7 @@ using Demo.Webapi.Common;
 using Demo.Webapi.Common.Entites;
 using Demo.Webapi.Common.Entites.DTO;
 using Demo.Webapi.Common.Entities;
+using Demo.Webapi.Common.Entities.DTO;
 using Demo.Webapi.Common.Enums;
 using Demo.Webapi.DL.BaseDL;
 using Microsoft.AspNetCore.Http;
@@ -63,12 +64,12 @@ namespace Demo.Webapi.DL
 
             // Chuyển đổi và tăng giá trị số
             if (!int.TryParse(numberPart, out int number))
-                throw new FormatException($"Không thể chuyển '{numberPart}' thành số"); number++; 
-            
+                throw new FormatException($"Không thể chuyển '{numberPart}' thành số"); number++;
+
             // Giữ nguyên số chữ số ban đầu (padding)
-            string nextNumberPart = number.ToString().PadLeft(numberPart.Length, '0'); 
+            string nextNumberPart = number.ToString().PadLeft(numberPart.Length, '0');
             // Ghép lại
-            return$"{prefix}{nextNumberPart}";
+            return $"{prefix}{nextNumberPart}";
         }
 
         /// <summary>
@@ -80,7 +81,7 @@ namespace Demo.Webapi.DL
         {
             using (var mysqlConnection = GetOpenConnection())
             {
-                using(var transaction  = mysqlConnection.BeginTransaction())
+                using (var transaction = mysqlConnection.BeginTransaction())
                 {
                     try
                     {
@@ -88,9 +89,9 @@ namespace Demo.Webapi.DL
                         string procName = "Proc_MultipleDeleteEmployee";
                         var mySqlConnection = GetOpenConnection();
                         string param = "";
-                        for(int i = 0; i < list.Length; i++)
+                        for (int i = 0; i < list.Length; i++)
                         {
-                            if (i==0) param += $"'{list[i]}'";
+                            if (i == 0) param += $"'{list[i]}'";
                             else param += $", '{list[i]}'";
                         }
                         var parameters = new DynamicParameters();
@@ -105,6 +106,102 @@ namespace Demo.Webapi.DL
                         return -1;
                     }
                 }
+            }
+        }
+
+        /// <summary>
+        /// Filter Record
+        /// </summary>
+        /// <param name="keyWord"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="pageNumber"></param>
+        /// <returns></returns>
+        /// pvdat (28/03/2023)
+        public ServiceResult EmployeeUseAsset(string? keyWord, int? pageSize, int? pageNumber)
+        {
+            try
+            {
+                // Provide sensible defaults and compute offset
+                int ps = pageSize ?? 10;
+                int pn = pageNumber ?? 1;
+                int offset = (pn - 1) * ps;
+
+                keyWord ??= "";
+                string keywordParam = $"%{keyWord}%";
+
+                // Use DISTINCT on employee.* to avoid duplicate employee rows caused by join
+                string selectOption = "DISTINCT employee.*";
+                // join with asset so we only return employees that have an asset (exists employeeid in asset)
+                string joinOption = "INNER JOIN asset ON asset.employeeid::uuid = employee.employeeid::uuid";
+                string? optionalQuery = null;
+                string orderOption = "created_date desc";
+                string whereOption = "";
+
+                // Build WHERE by OR-ing searchable properties, parameterized to avoid SQL injection
+                if (!string.IsNullOrEmpty(keyWord))
+                {
+                    var properties = typeof(Employee).GetProperties();
+                    var whereBuilder = new StringBuilder();
+                    whereBuilder.Append("WHERE (");
+                    bool first = true;
+                    foreach (var property in properties)
+                    {
+                        // skip non-string/date/number properties if desired; for now include all
+                        if (!first)
+                        {
+                            whereBuilder.Append(" OR ");
+                        }
+                        whereBuilder.Append($"cast(employee.{property.Name} as text) ILIKE @Keyword");
+                        first = false;
+                    }
+                    whereBuilder.Append(")");
+                    whereOption = whereBuilder.ToString();
+                }
+
+                // Count distinct employees matching the filter
+                string getTotalRecord = $"select count(DISTINCT employee.employeeid) as \"Total record\" from employee {joinOption} {whereOption};";
+
+                string queryString = $"select {selectOption} from employee {joinOption} {whereOption} order by {orderOption} limit @PageSize offset @Offset;";
+
+                var sqlConection = GetOpenConnection();
+
+                // Execute both queries in one call, parameterized
+                string excuteQuery = queryString + getTotalRecord;
+                if (optionalQuery != null) excuteQuery += optionalQuery;
+
+                var resultSets = QueryMultiple(sqlConection, excuteQuery, new { Keyword = keywordParam, PageSize = ps, Offset = offset }, commandType: CommandType.Text);
+
+                var data = resultSets.Read();
+                var totalRecord = resultSets.Read();
+                var optionResult = optionalQuery != null ? resultSets.Read() : null;
+                sqlConection.Close();
+
+                return new ServiceResult
+                {
+                    IsSuccess = true,
+                    Message = "",
+                    Data = new
+                    {
+                        data,
+                        totalRecord,
+                        optionResult,
+                    }
+                };
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return new ServiceResult
+                {
+                    IsSuccess = false,
+                    Data = new ErrorResult
+                    {
+                        ErrorCode = ErrorCode.Exception,
+                        DevMsg = Resource.devMsg_Exception,
+                        UserMsg = Resource.userMsg_Exception,
+                        MoreInfo = "More info: "
+                    },
+                };
             }
         }
     }

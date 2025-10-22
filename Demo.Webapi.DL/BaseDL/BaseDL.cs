@@ -342,6 +342,19 @@ namespace Demo.Webapi.DL.BaseDL
                 {
                     orderOption = "supplier_code desc";
                 }
+
+                // Xử lý cho tài sản
+                if (typeof(T).Name.Equals("Asset", StringComparison.OrdinalIgnoreCase))
+                {
+                    selectOption = "asset.*, (CASE WHEN employee.fullname IS NOT NULL AND trim(employee.fullname) <> '' " +
+                                   "THEN COALESCE(employee.employeecode, '') || ' - ' || employee.fullname " +
+                                   "ELSE COALESCE(employee.employeecode, '') END) as employeename";
+                    // cast employee.employeeid to text to avoid uuid/text mismatch errors if asset.employeeid is stored as text
+                    joinOption = "left join employee on cast(employee.employeeid as text) = asset.employeeid";
+                    // Ensure total count considers join and current whereOption
+                    getTotalRecord = $"select count(*) as \"Total record\" from asset {joinOption} {whereOption};";
+                }
+
                 string queryString = $"select {selectOption} from {typeof(T).Name.ToLower()} {joinOption} {whereOption} order by {orderOption} limit {pageSize} offset {offset};";
                 var sqlConection = GetOpenConnection();
                 // Thực hiện truy vấn

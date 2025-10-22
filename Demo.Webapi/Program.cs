@@ -1,6 +1,7 @@
-
+﻿
 using Demo.Webapi.BLayer;
 using Demo.Webapi.BLayer.BaseBL;
+using Demo.Webapi.Common.Entities;
 using Demo.Webapi.DL;
 using Demo.Webapi.DL.BaseDL;
 
@@ -32,6 +33,11 @@ builder.Services.AddScoped<IReceiptPaymentDetailBL, ReceiptPaymentDetailBL>();
 builder.Services.AddScoped<IReceiptPaymentDetailDL, ReceiptPaymentDetailDL>();
 builder.Services.AddScoped<IReceiptPaymentBL, ReceiptPaymentBL>();
 builder.Services.AddScoped<IReceiptPaymentDL, ReceiptPaymentDL>();
+
+builder.Services.AddScoped<IAssetDL, AssetDL>();
+builder.Services.AddScoped<IAssetBL, AssetBL>();
+// Đảm bảo closed-generic resolution cho Asset sử dụng AssetBL
+builder.Services.AddScoped<IBaseBL<Asset>, AssetBL>();
 
 DatabaseContext.connectionString = builder.Configuration.GetConnectionString("PostgreSqlProduction");
 

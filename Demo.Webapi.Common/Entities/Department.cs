@@ -24,7 +24,7 @@ public class Department
     /// <summary>
     /// Ngày tạo
     /// </summary>
-    public DateTime? CreatedAt { get; set; }
+    public DateTime? created_date { get; set; }
 
     /// <summary>
     /// Người tạo

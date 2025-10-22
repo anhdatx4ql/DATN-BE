@@ -24,6 +24,43 @@ namespace Demo.Webapi.Controllers
             _employeeBL = employeeBL;
         }
 
+        /// <summary>
+        /// Lọc bản ghi theo điều kiện
+        /// </summary>
+        /// <param name="keyWord"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="pageNumber"></param>
+        /// <param name="departmentId"></param>
+        /// <param name="positionId"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("EmployeeUseAsset")]
+
+        public IActionResult EmployeeUseAsset(
+            [FromQuery] string? keyWord,
+            [FromQuery] int? pageSize,
+            [FromQuery] int? pageNumber)
+        {
+            try
+            {
+                var result = _employeeBL.EmployeeUseAsset(keyWord, pageSize, pageNumber);
+                if (result == null)
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    return StatusCode(200, result);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                _exceptionResult.TraceId = HttpContext.TraceIdentifier;
+                return StatusCode(500, _exceptionResult);
+            }
+        }
+
         [HttpGet("NewEmployeeCode")]
         public IActionResult NewEmployeeCode()
         {

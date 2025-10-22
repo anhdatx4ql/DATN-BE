@@ -1,5 +1,6 @@
 ﻿using Demo.Webapi.Common.Entites;
 using Demo.Webapi.Common.Entities;
+using Demo.Webapi.Common.Entities.DTO;
 using Demo.Webapi.DL.BaseDL;
 using System;
 using System.Collections.Generic;
@@ -25,5 +26,6 @@ namespace Demo.Webapi.DL
         /// <returns>Số bản ghi bị xóa</returns>
         /// pvdat (26/03/2023)
         public int DeleteMultipleRecords(string idList);
+        public ServiceResult EmployeeUseAsset(string? keyWord, int? pageSize, int? pageNumber);
     }
 }

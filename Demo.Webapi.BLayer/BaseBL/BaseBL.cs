@@ -190,7 +190,7 @@ namespace Demo.Webapi.BLayer.BaseBL
             if (result.Count() == 0) return true;
             else return false;
         }
-
+        
         /// <summary>
         /// Cập nhật thông tin bản ghi
         /// </summary>
@@ -209,7 +209,16 @@ namespace Demo.Webapi.BLayer.BaseBL
                     Data = errors,
                 };
             }
-            return _baseDL.UpdateRecord(id, record);
+            var res = _baseDL.UpdateRecord(id, record);
+            if(res != null && res.IsSuccess)
+            {
+                AfterUpdateRecord(record);
+            }
+            return res;
+        }
+        protected virtual void AfterUpdateRecord(T record)
+        {
+            
         }
 
         public ServiceResult BulkCreate(IEnumerable<T> records)

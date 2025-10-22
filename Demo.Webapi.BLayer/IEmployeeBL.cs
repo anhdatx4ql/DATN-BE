@@ -1,6 +1,7 @@
 ﻿using Demo.Webapi.BLayer.BaseBL;
 using Demo.Webapi.Common.Entites;
 using Demo.Webapi.Common.Entities;
+using Demo.Webapi.Common.Entities.DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -19,5 +20,6 @@ namespace Demo.Webapi.BLayer
         public string GetNewEmployeeCode();
 
         public int DeleteMultipleRecords(string idList);
+        public ServiceResult EmployeeUseAsset(string? keyWord, int? pageSize, int? pageNumber);
     }
 }

@@ -35,6 +35,20 @@ namespace Demo.Webapi.BLayer
         #endregion
 
         /// <summary>
+        /// Lọc bản ghi theo điều kiện
+        /// </summary>
+        /// <param name="keyWord"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="pageNumber"></param>
+        /// <param name="departmentId"></param>
+        /// <param name="positionId"></param>
+        /// <returns></returns>
+        public ServiceResult EmployeeUseAsset(string? keyWord, int? pageSize, int? pageNumber)
+        {
+            return _employeeDL.EmployeeUseAsset(keyWord, pageSize, pageNumber);
+        }
+
+        /// <summary>
         /// Lấy mã nhân viên mới
         /// </summary>
         /// <returns></returns>
