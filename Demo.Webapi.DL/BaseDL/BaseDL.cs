@@ -325,7 +325,13 @@ namespace Demo.Webapi.DL.BaseDL
                     }
                     getTotalRecord = $"select count(*) as \"Total record\" from {typeof(T).Name} {whereOption};";
                 }
-                if (typeof(T).Name == "receipt_payment")
+                if (typeof(T).Name == "Employee")
+                {
+                    selectOption = "*, departmentname";
+                    joinOption = "left join department b on a.departmentid = b.departmentid";
+
+                }
+                else if (typeof(T).Name == "receipt_payment")
                 {
                     selectOption = "*, (select sum(rpd.amount) as \"total_amount\" from receipt_payment_detail rpd where rpd.rp_id = re_id)";
                     joinOption = "left join supplier on account_id = supplier_id left join employee on cast(employee.employeeid as text) = receipt_payment.employee_id";
@@ -356,6 +362,12 @@ namespace Demo.Webapi.DL.BaseDL
                 }
 
                 string queryString = $"select {selectOption} from {typeof(T).Name.ToLower()} {joinOption} {whereOption} order by {orderOption} limit {pageSize} offset {offset};";
+
+                if (typeof(T).Name == "Employee")
+                {
+                    queryString = $"select {selectOption} from {typeof(T).Name.ToLower()} a {joinOption} {whereOption} order by a.{orderOption} limit {pageSize} offset {offset};";
+
+                }
                 var sqlConection = GetOpenConnection();
                 // Thực hiện truy vấn
                 string excuteQuery = queryString + getTotalRecord;

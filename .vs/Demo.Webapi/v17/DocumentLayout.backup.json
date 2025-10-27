@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{CE7BD00D-005C-401F-97FD-8AC955DAC17E}|Demo.Webapi.DL\\Demo.Webapi.DL.csproj|solutionrelative:demo.webapi.dl\\basedl\\basedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A40051EC-BEC7-448B-AEE6-1E6C3AB89D43}|Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj|d:\\datn\\am_backend\\demo.webapi.blayer\\basebl\\basebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40051EC-BEC7-448B-AEE6-1E6C3AB89D43}|Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj|solutionrelative:demo.webapi.blayer\\basebl\\basebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC0AA951-068D-4C07-82A5-B44EABED0AF3}|Demo.Webapi\\Demo.Webapi.csproj|d:\\datn\\am_backend\\demo.webapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC0AA951-068D-4C07-82A5-B44EABED0AF3}|Demo.Webapi\\Demo.Webapi.csproj|solutionrelative:demo.webapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC0AA951-068D-4C07-82A5-B44EABED0AF3}|Demo.Webapi\\Demo.Webapi.csproj|d:\\datn\\am_backend\\demo.webapi\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC0AA951-068D-4C07-82A5-B44EABED0AF3}|Demo.Webapi\\Demo.Webapi.csproj|solutionrelative:demo.webapi\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40051EC-BEC7-448B-AEE6-1E6C3AB89D43}|Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj|d:\\datn\\am_backend\\demo.webapi.blayer\\assetbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40051EC-BEC7-448B-AEE6-1E6C3AB89D43}|Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj|solutionrelative:demo.webapi.blayer\\assetbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CE7BD00D-005C-401F-97FD-8AC955DAC17E}|Demo.Webapi.DL\\Demo.Webapi.DL.csproj|d:\\datn\\am_backend\\demo.webapi.dl\\iemployeedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE7BD00D-005C-401F-97FD-8AC955DAC17E}|Demo.Webapi.DL\\Demo.Webapi.DL.csproj|solutionrelative:demo.webapi.dl\\iemployeedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,20 +35,8 @@
       "RelativeMoniker": "D:0:0:{A40051EC-BEC7-448B-AEE6-1E6C3AB89D43}|Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj|solutionrelative:demo.webapi.blayer\\employeebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC0AA951-068D-4C07-82A5-B44EABED0AF3}|Demo.Webapi\\Demo.Webapi.csproj|d:\\datn\\am_backend\\demo.webapi\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC0AA951-068D-4C07-82A5-B44EABED0AF3}|Demo.Webapi\\Demo.Webapi.csproj|solutionrelative:demo.webapi\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A40051EC-BEC7-448B-AEE6-1E6C3AB89D43}|Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj|d:\\datn\\am_backend\\demo.webapi.blayer\\iemployeebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A40051EC-BEC7-448B-AEE6-1E6C3AB89D43}|Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj|solutionrelative:demo.webapi.blayer\\iemployeebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A40051EC-BEC7-448B-AEE6-1E6C3AB89D43}|Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj|d:\\datn\\am_backend\\demo.webapi.blayer\\basebl\\basebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A40051EC-BEC7-448B-AEE6-1E6C3AB89D43}|Demo.Webapi.BLayer\\Demo.Webapi.BLayer.csproj|solutionrelative:demo.webapi.blayer\\basebl\\basebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC0AA951-068D-4C07-82A5-B44EABED0AF3}|Demo.Webapi\\Demo.Webapi.csproj|d:\\datn\\am_backend\\demo.webapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC0AA951-068D-4C07-82A5-B44EABED0AF3}|Demo.Webapi\\Demo.Webapi.csproj|solutionrelative:demo.webapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,15 +50,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IEmployeeDL.cs",
-              "DocumentMoniker": "D:\\DATN\\am_backend\\Demo.Webapi.DL\\IEmployeeDL.cs",
-              "RelativeDocumentMoniker": "Demo.Webapi.DL\\IEmployeeDL.cs",
-              "ToolTip": "D:\\DATN\\am_backend\\Demo.Webapi.DL\\IEmployeeDL.cs",
-              "RelativeToolTip": "Demo.Webapi.DL\\IEmployeeDL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABfAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AssetBL.cs",
+              "DocumentMoniker": "D:\\DATN\\am_backend\\Demo.Webapi.BLayer\\AssetBL.cs",
+              "RelativeDocumentMoniker": "Demo.Webapi.BLayer\\AssetBL.cs",
+              "ToolTip": "D:\\DATN\\am_backend\\Demo.Webapi.BLayer\\AssetBL.cs",
+              "RelativeToolTip": "Demo.Webapi.BLayer\\AssetBL.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAD4vx4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:33:32.975Z",
+              "WhenOpened": "2025-10-22T16:42:48.513Z",
               "EditorCaption": ""
             },
             {
@@ -65,14 +69,14 @@
               "RelativeDocumentMoniker": "Demo.Webapi.DL\\BaseDL\\BaseDL.cs",
               "ToolTip": "D:\\DATN\\am_backend\\Demo.Webapi.DL\\BaseDL\\BaseDL.cs",
               "RelativeToolTip": "Demo.Webapi.DL\\BaseDL\\BaseDL.cs",
-              "ViewState": "AgIAAEEBAAAAAAAAAAAWwFkBAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAADQBAAAAAAAAAAAhwEcBAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T16:33:46.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "IEmployeeBL.cs",
               "DocumentMoniker": "D:\\DATN\\am_backend\\Demo.Webapi.BLayer\\IEmployeeBL.cs",
               "RelativeDocumentMoniker": "Demo.Webapi.BLayer\\IEmployeeBL.cs",
@@ -80,38 +84,49 @@
               "RelativeToolTip": "Demo.Webapi.BLayer\\IEmployeeBL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:32:52.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T16:32:52.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "BaseBL.cs",
               "DocumentMoniker": "D:\\DATN\\am_backend\\Demo.Webapi.BLayer\\BaseBL\\BaseBL.cs",
               "RelativeDocumentMoniker": "Demo.Webapi.BLayer\\BaseBL\\BaseBL.cs",
               "ToolTip": "D:\\DATN\\am_backend\\Demo.Webapi.BLayer\\BaseBL\\BaseBL.cs",
               "RelativeToolTip": "Demo.Webapi.BLayer\\BaseBL\\BaseBL.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAIA4wFUAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAgwGAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T16:32:41.752Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "BaseController.cs",
               "DocumentMoniker": "D:\\DATN\\am_backend\\Demo.Webapi\\Controllers\\BaseController.cs",
               "RelativeDocumentMoniker": "Demo.Webapi\\Controllers\\BaseController.cs",
               "ToolTip": "D:\\DATN\\am_backend\\Demo.Webapi\\Controllers\\BaseController.cs",
               "RelativeToolTip": "Demo.Webapi\\Controllers\\BaseController.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAnwG8AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAowG8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T16:30:10.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "IEmployeeDL.cs",
+              "DocumentMoniker": "D:\\DATN\\am_backend\\Demo.Webapi.DL\\IEmployeeDL.cs",
+              "RelativeDocumentMoniker": "Demo.Webapi.DL\\IEmployeeDL.cs",
+              "ToolTip": "D:\\DATN\\am_backend\\Demo.Webapi.DL\\IEmployeeDL.cs",
+              "RelativeToolTip": "Demo.Webapi.DL\\IEmployeeDL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:33:32.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "EmployeeBL.cs",
               "DocumentMoniker": "D:\\DATN\\am_backend\\Demo.Webapi.BLayer\\EmployeeBL.cs",
               "RelativeDocumentMoniker": "Demo.Webapi.BLayer\\EmployeeBL.cs",
@@ -119,25 +134,24 @@
               "RelativeToolTip": "Demo.Webapi.BLayer\\EmployeeBL.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAApwC8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:27:37.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T16:27:37.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "EmployeesController.cs",
               "DocumentMoniker": "D:\\DATN\\am_backend\\Demo.Webapi\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "Demo.Webapi\\Controllers\\EmployeesController.cs",
               "ToolTip": "D:\\DATN\\am_backend\\Demo.Webapi\\Controllers\\EmployeesController.cs",
               "RelativeToolTip": "Demo.Webapi\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCQAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAewG8AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T14:53:23.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "EmployeeDL.cs",
               "DocumentMoniker": "D:\\DATN\\am_backend\\Demo.Webapi.DL\\EmployeeDL.cs",
               "RelativeDocumentMoniker": "Demo.Webapi.DL\\EmployeeDL.cs",
@@ -145,8 +159,7 @@
               "RelativeToolTip": "Demo.Webapi.DL\\EmployeeDL.cs",
               "ViewState": "AgIAAHQAAAAAAAAAAAAtwIYAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T14:53:23.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T14:53:23.029Z"
             }
           ]
         }
