@@ -22,6 +22,11 @@ namespace Demo.Webapi.Common.Entities
         public string? DepartmentName { get; set; }
 
         /// <summary>
+        /// Phòng ban
+        /// </summary>
+        public Guid? DepartmentId { get; set; }
+
+        /// <summary>
         /// SĐT
         /// </summary>
         public string? PhoneNumber { get; set; }

@@ -2589,6 +2589,11 @@
             "type": "string",
             "nullable": true
           },
+          "DepartmentId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
           "PhoneNumber": {
             "type": "string",
             "nullable": true

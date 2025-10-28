@@ -43,7 +43,7 @@ namespace Demo.Webapi.DL.BaseDL
                     var value = property.GetValue(record);
                     if (property.PropertyType.Name == "Nullable`1" && property.PropertyType.FullName.Contains("DateTime"))
                     {
-                        if (property.Name == "created_date")
+                        if (property.Name == "created_date" || property.Name == "createdat")
                         {
                             value = DateTime.Now;
                         }
@@ -327,7 +327,7 @@ namespace Demo.Webapi.DL.BaseDL
                 }
                 if (typeof(T).Name == "Employee")
                 {
-                    selectOption = "*, departmentname";
+                    selectOption = "a.EmployeeID, a.EmployeeCode, a.FullName, a.PhoneNumber, a.Email, \r\n  a.Address, a.IdentityNumber, a.IdentityPlace, a.DepartmentId, a.BankBranch, \r\n  a.BankAccount, a.PositionName, a.LandingPhone, a.BankName, a.Gender, \r\n  a.DateOfBirth, a.IdentityDate, a.CreatedAt, a.CreatedBy, a.ModifiedAt, \r\n  a.ModifiedBy, b.departmentname AS departmentname ";
                     joinOption = "left join department b on a.departmentid = b.departmentid";
 
                 }
@@ -365,8 +365,8 @@ namespace Demo.Webapi.DL.BaseDL
 
                 if (typeof(T).Name == "Employee")
                 {
+                    orderOption = "createdat desc";
                     queryString = $"select {selectOption} from {typeof(T).Name.ToLower()} a {joinOption} {whereOption} order by a.{orderOption} limit {pageSize} offset {offset};";
-
                 }
                 var sqlConection = GetOpenConnection();
                 // Thực hiện truy vấn
@@ -470,7 +470,10 @@ namespace Demo.Webapi.DL.BaseDL
                 if (typeof(T).Name == "Account") { 
                     orderBy = "datalevel asc, accountnumber::text ";
                     orderSort = "asc";
-                } 
+                }else if(typeof(T).Name == "Employee")
+                {
+                    orderBy = "createdat";
+                }
                 string queryString = $"select *, (select count(*) from {typeof(T).Name.ToLower()}) as \"Total record\" from {typeof(T).Name} order by {orderBy} {orderSort}";
                 // Kết nối tới db
                 var mySqlConnection = GetOpenConnection();
