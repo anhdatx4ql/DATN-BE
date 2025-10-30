@@ -134,7 +134,7 @@ namespace Demo.Webapi.DL
                 // join with asset so we only return employees that have an asset (exists employeeid in asset)
                 string joinOption = "INNER JOIN asset ON asset.employeeid::uuid = employee.employeeid::uuid";
                 string? optionalQuery = null;
-                string orderOption = "created_date desc";
+                string orderOption = "createdat desc";
                 string whereOption = "";
 
                 // Build WHERE by OR-ing searchable properties, parameterized to avoid SQL injection

@@ -317,13 +317,30 @@ namespace Demo.Webapi.DL.BaseDL
                     int i = 0;
                     foreach (var property in properties)
                     {
-                        if (i == 0)
-                            whereOption += $"where cast({typeof(T).Name}.{property.Name} as text) ilike '%{keyWord}%'";
+                        if(typeof(T).Name == "Employee")
+                        {
+                            if (i == 0)
+                                whereOption += $"where cast(a.{property.Name} as text) ilike '%{keyWord}%'";
+                            else
+                                whereOption += $" or cast(a.{property.Name} as text) ilike '%{keyWord}%'";
+                        }
                         else
-                            whereOption += $" or cast({typeof(T).Name}.{property.Name} as text) ilike '%{keyWord}%'";
+                        {
+                            if (i == 0)
+                                whereOption += $"where cast({typeof(T).Name}.{property.Name} as text) ilike '%{keyWord}%'";
+                            else
+                                whereOption += $" or cast({typeof(T).Name}.{property.Name} as text) ilike '%{keyWord}%'";
+                        }
                         i++;
                     }
-                    getTotalRecord = $"select count(*) as \"Total record\" from {typeof(T).Name} {whereOption};";
+                    if (typeof(T).Name == "Employee")
+                    {
+                        getTotalRecord = $"select count(*) as \"Total record\" from {typeof(T).Name} a {whereOption};";
+                    }
+                    else
+                    {
+                        getTotalRecord = $"select count(*) as \"Total record\" from {typeof(T).Name} {whereOption};";
+                    }
                 }
                 if (typeof(T).Name == "Employee")
                 {
