@@ -27,5 +27,10 @@ namespace Demo.Webapi.Common.Entities
 
         public Guid? EmployeeID { get; set; }
 
+        /// <summary>
+        /// Đếm số lần hư hỏng của tài sản
+        /// </summary>
+        public int? CountAssetdamaged { get; set; } = 0;
+
     }
 }
